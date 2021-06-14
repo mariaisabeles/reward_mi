@@ -1,12 +1,16 @@
-import { StrictMode } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-
 import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import AppProvider from "./contexts/AppContext";
 
-const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-  rootElement
+  <BrowserRouter>
+    <React.StrictMode>
+      <AppProvider>
+        <App />
+      </AppProvider>
+    </React.StrictMode>
+  </BrowserRouter>,
+  document.getElementById("root")
 );
