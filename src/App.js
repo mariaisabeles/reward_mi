@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import History from "./History";
 import ProductsDisplay from "./ProductsDisplay";
 import { AppContext } from "./contexts/AppContext";
+import "./styles.css";
 
 function App() {
   const {

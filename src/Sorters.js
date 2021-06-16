@@ -10,12 +10,18 @@ function Sorters(props) {
         role="toolbar"
         aria-label="Toolbar with button groups"
       >
-        <p className="text-secondary my-auto p-custom">Sort by: </p>
+        <p className="text-secondary my-auto p-custom">
+          <h5>SORT BY: </h5>
+        </p>
         <div className="btn-group mr-2" role="group" aria-label="First group">
           <button
             onClick={() => setSortBy(0)}
             type="button"
-            className={sortBy === 0 ? "btn btn-primary" : "btn btn-secondary"}
+            className={
+              sortBy === 0
+                ? "btn btn-primary justify-content-center"
+                : "btn btn-secondary"
+            }
           >
             Most Recent
           </button>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "./contexts/AppContext";
+import banner from "../rewards-store/assets/header-x2.png";
 
 function Header(props) {
   const { userResponse, setIsUserUpdated } = React.useContext(AppContext);
@@ -33,13 +34,18 @@ function Header(props) {
   return (
     <header>
       <div className="navbar navbar-dark bg-primary box-shadow">
+        <div className="contenedor">
+          <img src={banner} alt="banner" width="100%" max-height="50px" />
+          <div className="centrado">
+            <h1>
+              <b>ELECTRONICS</b>
+            </h1>
+          </div>
+        </div>
         <div className="container d-flex justify-content-between">
           <Link to="/">
             <i className="fas fa-shopping-cart fa-2x"></i>
           </Link>
-          <h1 align="center" face="Comic Sans MS,arial">
-            ELECTRONICS
-          </h1>
           <div className="dropdown d-flex">
             <h3 className="nav-item my-auto user-info">
               {name} <i className="fas fa-coins"></i> {points}{" "}
