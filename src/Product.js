@@ -1,6 +1,7 @@
 import React from "react";
 import { AppContext } from "./contexts/AppContext";
 import feliz from "../rewards-store/cara_feliz.jpg";
+import triste from "../rewards-store/cara_triste.png";
 
 function Product(props) {
   const { userResponse, setIsUserUpdated } = React.useContext(AppContext);
@@ -120,6 +121,7 @@ function Product(props) {
               <h5 className="modal-title" id="exampleModalLabel">
                 Redeemed Failure
               </h5>
+              <img src={triste} alt="triste" />
               <button
                 type="button"
                 className="close"
