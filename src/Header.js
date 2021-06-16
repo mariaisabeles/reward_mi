@@ -42,28 +42,29 @@ function Header(props) {
             </h1>
           </div>
         </div>
-        <div className="container d-flex justify-content-between">
-          <Link to="/">
-            <i className="fas fa-shopping-cart fa-2x"></i>
-          </Link>
+        <div className="container d-flex justify-content-between flex-row">
           <div className="dropdown d-flex">
-            <h3 className="nav-item my-auto user-info">
+            <Link to="/">
+              <button className="btn btn-light">
+                <i className="fas fa-shopping-cart"></i>
+              </button>
+            </Link>
+            <h4 className="nav-item my-auto user-info">
               {name} <i className="fas fa-coins"></i> {points}{" "}
-            </h3>
-
+            </h4>
             <button
-              className="btn btn-secondary plus-btn"
+              className="btn btn-light plus-btn"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
-              <i className="fas fa-plus-circle"></i>
+              <i className="fas fa-coins">ADD COINS</i>
             </button>
             <Link to="/history">
-              <button className="btn btn-secondary">
-                <i className="fas fa-clipboard"></i>
+              <button className="btn btn-light">
+                <i className="fas fa-history"> HISTORY</i>
               </button>
             </Link>
             <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
