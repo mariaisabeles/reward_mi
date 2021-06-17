@@ -10,9 +10,9 @@ function Sorters(props) {
         role="toolbar"
         aria-label="Toolbar with button groups"
       >
-        <p className="text-secondary my-auto p-custom">
+        <div className="text-secondary my-auto p-custom">
           <h5>SORT BY: </h5>
-        </p>
+        </div>
         <div className="btn-group mr-2" role="group" aria-label="First group">
           <button
             onClick={() => setSortBy(0)}
